@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "tinderad",
+    "slug": "tinderad",
+    "scheme": "com.okpoka92.tinderad",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon":"./assets/tinder.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/tinder.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+     "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier":"com.okpoka92.tinderad",
+      "buildNumber":"3"
+    },
+    "android": {
+      "package":"com.okpoka92.tinderad",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+      
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
