@@ -9,12 +9,12 @@ import { getStorage } from "firebase/storage"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyADf5awRNdgf-eaGbq2XPoIZIUtGfBJaEo",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "tinder-2-yt-75ec6.firebaseapp.com",
   projectId: "tinder-2-yt-75ec6",
   storageBucket: "tinder-2-yt-75ec6.appspot.com",
   messagingSenderId: "140520512004",
-  appId: "1:140520512004:web:edba610e482bf17106f351"
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
