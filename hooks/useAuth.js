@@ -31,7 +31,7 @@ const [error, setError] = useState(null);
  
 const useProxy = Platform.select({ web: false, default: true });
 
-  const [request, response, promptAsync] = Google.useIdTokenAuthRequest({
+  const [request, response, promptAsync] = Google.useAuthRequest({
 
    androidClientId:'140520512004-iic7uc99n0lb1pga78p07e2cduvdljr9.apps.googleusercontent.com',
     
@@ -39,10 +39,11 @@ const useProxy = Platform.select({ web: false, default: true });
     
     expoClientId:'140520512004-mcjhu605k6rsq1mhnidml92c80dv09ej.apps.googleusercontent.com',
     
-    scopes:['profile', 'email'],
+   scopes:['profile', 'email'],
     
-   //responseType:'id_token',
-   responseType: ResponseType.Token,
+   responseType:ResponseType.Token,
+
+  //responseType:'id_token', 
 
 
   });
