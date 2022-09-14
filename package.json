@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "start:development": "NODE_ENV=development npx react-native start",
+    "start:production": "NODE_ENV=production npx react-native start",
+ 
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -29,6 +32,7 @@
     "react-dom": "17.0.2",
     "react-native": "0.68.2",
     "react-native-deck-swiper-renewed": "^2.1.0",
+    "react-native-dotenv": "^3.3.1",
     "react-native-gesture-handler": "~2.2.1",
     "react-native-get-random-values": "^1.8.0",
     "react-native-image-picker": "^4.8.4",

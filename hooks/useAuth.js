@@ -9,6 +9,7 @@ import { auth } from '../firebase';
 import { GoogleAuthProvider, signInWithCredential, onAuthStateChanged, signOut } from 'firebase/auth';
 import { onSnapshot } from 'firebase/firestore';
 
+import  envs from '../config/env';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -33,14 +34,14 @@ const useProxy = Platform.select({ web: false, default: true });
 
   const [request, response, promptAsync] = Google.useAuthRequest({
 
-   androidClientId: process.env.ANDROID_CLIENT_ID,
+ androidClientId: process.env.ANDROID_CLIENT_ID,
     
-    isoClientId: process.env.IOS_CLIENT_ID,
-    expoClientId: process.env.WEB_CLIENT_ID,
+  isoClientId: process.env.IOS_CLIENT_ID,
+  expoClientId: process.env.WEB_CLIENT_ID,
     
-   scopes:['profile', 'email'],
+  scopes:['profile', 'email'],
     
-   responseType:ResponseType.Token,
+  responseType:ResponseType.Token,
 
   //responseType:'id_token', 
 

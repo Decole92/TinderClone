@@ -4,11 +4,12 @@ LogBox.ignoreAllLogs();
 import tw from "tailwind-rn";
 
 
+//import { FIREBASE_API_KEY } from '@env';
+
 import { AntDesign, Entypo, Fontisto, Ionicons, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 
 
 
@@ -36,20 +37,18 @@ import { AuthProvider } from './hooks/useAuth';
 const Tab = createBottomTabNavigator();
 
 
+
 function App() {
 
-
-  
   const Stack = createStackNavigator();
 
  
 
   const { user } = useAuth();
 
- 
 
- 
- 
+
+ console.log("api_key", process.env.FIREBASE_API_KEY);
 
 
   return (
